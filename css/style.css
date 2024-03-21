@@ -7,9 +7,13 @@
 header{
     border-bottom: 1px solid #d7d7d7;
 }
+.transparente{
+    background-color: rgba(255, 255, 255, 0.7) !important; /* Cor de fundo do cabeçalho transparente */
+}
 .topo{
-    background-color: #F8F9FA;
-    height: 80px;
+    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo do cabeçalho com transparência inicial */
+    transition: background-color 0.5s ease;
+    
 }
 .container-top{
     height: 100%;
@@ -113,8 +117,21 @@ header{
     position: relative;
 }
 .title-content{
+    background-color: #fff;
+    color: #DC3545;
+    border: 2px solid #DC3545;
+    font-weight: 700;
+    padding: 25px 100px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: -25px;
+    right: 42%;
+}
+.title-hab{
     background-color: #DC3545;
     color: #fff;
+    border: 2px solid #000;
     font-weight: 700;
     padding: 25px 100px;
     height: 30px;
@@ -132,6 +149,7 @@ header{
 }
 .img-about img{
     border-radius: 50%;
+    box-shadow: 10px 10px 30px #DC3545;
 }
 
 
@@ -139,7 +157,7 @@ header{
 
 
 #habilidades{
-    background-color: #fff;
+    background-color: #f6f6f6;
     position: relative;
 }
 .content-hab{
@@ -152,10 +170,10 @@ header{
     box-shadow: 8px 8px 5px #d7d7d7;
 }
 .card-header{
-    background: rgba(220, 53, 69, .5);
+    background: rgba(25, 25, 25, 1);
     font-weight: 700;
     font-size: 1.5rem;
-    color: rgba(25, 25, 25);;
+    color: #DC3545;
 }
 .card-body{
     color: #000;
@@ -163,11 +181,17 @@ header{
 .btn{
     font-weight: 700;
 }
+.links-redes button{
+    padding: 15px 35px;
+}
 
 
 
 
-
+.modal-body input:focus, .modal-body textarea:focus{
+    box-shadow: none;
+    border: 2px solid #DC3545;
+}
 
 
 
