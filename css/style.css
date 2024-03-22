@@ -7,13 +7,9 @@
 header{
     border-bottom: 1px solid #d7d7d7;
 }
-.transparente{
-    background-color: rgba(255, 255, 255, 0.7) !important; /* Cor de fundo do cabeçalho transparente */
-}
 .topo{
-    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo do cabeçalho com transparência inicial */
-    transition: background-color 0.5s ease;
-    
+    background-color: #F8F9FA;
+    height: 80px;
 }
 .container-top{
     height: 100%;
@@ -65,14 +61,12 @@ header{
 
 #efeito-escrever{
     min-height: 300px;
-    background-image: url('../img/bg.jpg');
+    background-image: url('../img/bg-hab-dois.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 .banner-bg{
-   
-    background: rgba(255, 255, 255, .8);
 }
 .maq-escrever{
     min-height: 300px;
@@ -157,8 +151,13 @@ header{
 
 
 #habilidades{
-    background-color: #f6f6f6;
+    background: #f6f6f6;
     position: relative;
+    background-image: url('../img/bg-hab-dois.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .content-hab{
     gap: 50px;
@@ -198,7 +197,7 @@ header{
 
 /* Media */
 
-@media (max-width:768px){
+@media (max-width:500px){
     .navbar-mobile{
         width: 300px !important;
         height: 200px;
@@ -210,5 +209,37 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .title-content{
+        right: 13%;
+    }
+    .content-about{
+        flex-direction: column-reverse;
+    }
+    #efeito-escrever{
+        background-position: center center;
+        min-height: 200px !important;
+        max-width: 390px;
+
+    }
+    .maq-escrever{
+        min-height: 200px !important;
+        max-width: 390px;
+        font-size: 1.5rem;
+
+    }
+    .line-1 {
+        text-align: center;
+        white-space: pre-wrap;
+        border: none;
+    }
+    .animation-cursor {
+        animation: none !important;
+    }
+    #about{
+        padding-bottom: 60px;
+    }
+    .title-hab{
+        right: 12%;
     }
 }
