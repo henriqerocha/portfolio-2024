@@ -1,3 +1,5 @@
+// Para deixar os cards apagados e colorir ao passar o mouse
+
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
@@ -9,3 +11,4 @@ cards.forEach(card => {
     card.classList.add('apagado');
   });
 });
+

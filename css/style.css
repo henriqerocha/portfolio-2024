@@ -120,6 +120,38 @@ header{
     background-color: rgba(25, 25, 25);
     position: relative;
 }
+@keyframes aparecerEsquerda {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes aparecerDireita {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animacao-aparecer-esquerda {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecerEsquerda 4s ease forwards;
+}
+.animacao-aparecer-direita {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecerDireita 4s ease forwards;
+}
+
 .title-content{
     background-color: #fff;
     color: #DC3545;
@@ -223,7 +255,11 @@ header{
 
 
 
+/* Projetos */
 
+#projetos{
+    padding-top: 1000px;
+}
 
 
 
