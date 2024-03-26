@@ -315,11 +315,12 @@ header{
 }
 .text-projeto{
     position: relative;
+    display: block;
 }
 .text-projeto::after{
     content: " ";
     margin: -9px -5%;
-    width: 70%;
+    width: 10%;
     height: 6px;
     background-color: #DC3545;
     position: absolute;
