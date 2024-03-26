@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+h1,h2,h3,h4,h5,h6{
+    font-family: ;
+}
 /* header */
 
 header{
@@ -141,6 +143,7 @@ header{
     }
 }
 
+
 .animacao-aparecer-esquerda {
     opacity: 0;
     transform: translateY(20px);
@@ -165,16 +168,9 @@ header{
     right: 42%;
 }
 .title-hab{
-    background-color: #DC3545;
-    color: #fff;
-    border: 2px solid #000;
-    font-weight: 700;
-    padding: 25px 100px;
-    height: 30px;
-    border-radius: 5px;
-    position: absolute;
-    top: -25px;
-    right: 42%;
+    color: #DC3545;
+    font-weight: 400;
+    font-size: 3rem;
 }
 .text-about{
     color: #fff;
@@ -207,8 +203,20 @@ header{
     background-color: rgba(25, 25, 25, .7);
 }
 .content-hab{
-    gap: 50px;
-    padding-top: 100px !important;
+    padding-top: 50px !important;
+}
+.title-hab{
+    position: relative;
+}
+.title-hab::after{
+    content: " ";
+    margin: -9px -5%;
+    width: 70%;
+    height: 6px;
+    background-color: #DC3545;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
 .card{
     display: flex;
@@ -216,10 +224,13 @@ header{
     background-color: #f0f0f0;
     transition: filter 0.3s;
     margin-top: 100px;
+    width: 150px;
 }
 .meuCard {
     /* Estilo padrão do card */
-    background-color: #f0f0f0;
+    background-color: rgba(25, 25, 25, .8);
+    color: #DC3545;
+    font-weight: normal;
     transition: filter 0.3s; /* Adiciona uma transição suave */
   }
   
@@ -230,11 +241,44 @@ header{
   .meuCard.apagado {
     filter: grayscale(100%); /* Aplica o efeito de apagado */
   }
+
+  .tools {
+    display: flex;
+    align-items: center;
+    padding: 0 9px 9px;
+   }
+   
+   .circle {
+    padding: 0 4px;
+   }
+   
+   .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+   }
+   
+   .red {
+    background-color: #ff605c;
+   }
+   
+   .yellow {
+    background-color: #ffbd44;
+   }
+   
+   .green {
+    background-color: #00ca4e;
+   }
 .card-text{
     font-weight: 700;
 }
 .card-img-top{
-    width: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 20px;
 }
 .btn{
     font-weight: 700;
@@ -258,7 +302,29 @@ header{
 /* Projetos */
 
 #projetos{
-    padding-top: 1000px;
+    background-image: url('../img/bg-hab-dois.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 600px;
+}
+.title-projetos h2{
+    
+    font-size: 3rem;
+}
+.text-projeto{
+    position: relative;
+}
+.text-projeto::after{
+    content: " ";
+    margin: -9px -5%;
+    width: 70%;
+    height: 6px;
+    background-color: #DC3545;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
 
 
