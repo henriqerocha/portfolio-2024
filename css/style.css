@@ -66,7 +66,7 @@ header{
 
 #efeito-escrever{
     min-height: 300px;
-    background-image: url('../img/bg-hab-dois.jpg');
+    background-image: url('../img/bg-hab-dois.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -172,17 +172,77 @@ header{
     font-weight: 400;
     font-size: 3rem;
 }
+.title-about{
+    position: relative;
+    font-size: 3rem;
+    display: inline-block;
+}
+.title-about::after{
+    content: " ";
+    margin: -9px -5%;
+    width: 100%;
+    height: 6px;
+    background-color: #DC3545;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
 .text-about{
     color: #fff;
     text-align: justify;
 }
 .img-about{
-    height: 500px;
+    max-width: 350px !important;;
 }
-.img-about img{
-    border-radius: 50%;
-    box-shadow: 10px 10px 30px #DC3545;
-}
+.img-perfil {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .img-perfil::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 335px;
+    height: 335px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #d7d7d7 0%, #DC3545 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .img-perfil::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #d7d7d7 0%, #DC3545 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .img-perfil:hover::after {
+    filter: blur(30px);
+  }
+  
+  .img-perfil:hover::before {
+    transform: rotate(-90deg) scaleX(1) scaleY(1);
+  }
+  .img-perfil img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
 
 /* fim about */
 
@@ -193,7 +253,7 @@ header{
 #habilidades{
     background: #f6f6f6;
     position: relative;
-    background-image: url('../img/home-alternative.jpg');
+    background-image: url('../img/home-alternative.webp');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -218,24 +278,23 @@ header{
     bottom: 0px;
     left: 0px;
 }
-.card{
+
+.meuCard {
     display: flex;
     justify-content: center;
-    background-color: #f0f0f0;
     transition: filter 0.3s;
     margin-top: 100px;
     width: 150px;
-}
-.meuCard {
-    /* Estilo padrão do card */
     background-color: rgba(25, 25, 25, .8);
     color: #DC3545;
     font-weight: normal;
     transition: filter 0.3s; /* Adiciona uma transição suave */
   }
-  
+
   .meuCard:hover {
     filter: none; /* Remove o filtro quando o mouse está sobre o card */
+    transform: scale(1.2);
+    transition: all 1s;
   }
   
   .meuCard.apagado {
@@ -275,7 +334,7 @@ header{
 .card-text{
     font-weight: 700;
 }
-.card-img-top{
+.card-img-hab{
     width: 70px;
     height: 70px;
     margin: 20px;
@@ -302,7 +361,7 @@ header{
 /* Projetos */
 
 #projetos{
-    background-image: url('../img/bg-hab-dois.jpg');
+    background-image: url('../img/bg-hab-dois.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -310,27 +369,47 @@ header{
     min-height: 600px;
 }
 .title-projetos h2{
-    
+    text-align: center;
     font-size: 3rem;
 }
 .text-projeto{
     position: relative;
-    display: block;
 }
 .text-projeto::after{
     content: " ";
     margin: -9px -5%;
-    width: 10%;
+    width: 160px;
     height: 6px;
     background-color: #DC3545;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 45%;
+}
+.card-projeto{
+    width: 35rem !important;
+    border-radius: 25px;
+    box-shadow: 8px 8px 5px #d7d7d7;
+}
+.card-img-projeto{
+    border-radius: 25px 25px 0 0;
 }
 
 
 
 
+/* Trajetória */
+#trajetoria{
+    padding-top: 300px;
+    background-color: rgba(25, 25, 25, 1);
+}
+
+
+
+
+#rodape{
+    padding-top: 300px;
+    background-color: #000;
+}
 
 
 
