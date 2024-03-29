@@ -24,15 +24,17 @@ function mudarTema(){
   if(!temaAtual){
     bgHeader.style.backgroundColor = '#191919';
 
-    link.forEach(() =>{
-      
+    link.forEach((links) =>{
+      links.style.color = '#fff';
     });
 
 
     console.log('escuro');
   }else{
     bgHeader.style.backgroundColor = '#fff';
-    console.log('claro');
+    link.forEach((links) => {
+      links.style.color = 'var(--bs-nav-link-color)';
+    });
   }
 
   temaAtual = !temaAtual;

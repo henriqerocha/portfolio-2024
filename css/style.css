@@ -14,6 +14,7 @@ header{
 .topo{
     background-color: #F8F9FA;
     height: 80px;
+    transition: 0.5s ease-in-out;
 }
 .container-top{
     height: 100%;
@@ -25,7 +26,7 @@ header{
 .toggle-cor-fundo{
     position: absolute;
     top: 35%;
-    right: 50%;
+    right: -10%;
 }
 .theme-switch {
     --toggle-size: 10px;
@@ -262,9 +263,6 @@ header{
     align-items: center;
     height: 100%;
     padding: 15px;
-}
-.nav-item:hover{
-    background-color: #f6f6f6;
 }
 .icon-github:hover{
     transform: scale(1.2);
