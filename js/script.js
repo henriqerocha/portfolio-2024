@@ -27,6 +27,9 @@ function mudarTema(){
   const bgAbout = document.querySelector('#about');
   const txtAbout = document.querySelector('.text-about');
   const bgHab = document.querySelector('.bg-hab');
+  const bgCard = document.querySelectorAll('.meuCard');
+  const bgTrajetoria = document.querySelector('#trajetoria');
+  const bgFooter = document.querySelector('#rodape');
 
   if(!temaAtual){
     bgHeader.style.backgroundColor = '#191919';
@@ -35,12 +38,18 @@ function mudarTema(){
     txtMaqEscrever.style.color = '#fff';
     bgAbout.style.backgroundColor = 'rgba(25, 25, 25)';
     txtAbout.style.color = '#fff';
-    bgHab.style.backgroundColor = 'rgba(25, 25, 25, .7)'
+    bgHab.style.backgroundColor = 'rgba(25, 25, 25, .7)';
+    bgTrajetoria.style.backgroundColor = 'rgba(25, 25, 25)';
+    bgFooter.style.backgroundColor = 'rgba(0, 0, 0)';
+    
 
     link.forEach((links) =>{
       links.style.color = '#fff';
     });
 
+    bgCard.forEach((cards) =>{
+      cards.style.backgroundColor = 'rgba(25, 25, 25, .7)';
+    });
 
   }else{
     bgHeader.style.backgroundColor = '#fff';
@@ -49,10 +58,16 @@ function mudarTema(){
     txtMaqEscrever.style.color = '#000';
     bgAbout.style.backgroundColor = 'rgba(255, 255, 255)';
     txtAbout.style.color = '#191919';
-    bgHab.style.backgroundColor = 'rgba(255, 255, 255, .2)'
+    bgHab.style.backgroundColor = 'rgba(255, 255, 255, .2)';
+    bgTrajetoria.style.backgroundColor = 'rgba(255, 255, 255)';
+    bgFooter.style.backgroundColor = '#d7d7d7';
 
     link.forEach((links) => {
       links.style.color = 'var(--bs-nav-link-color)';
+    });
+
+    bgCard.forEach((cards) => {
+      cards.style.backgroundColor = 'rgba(255, 255, 255, .7)';
     });
   }
 
