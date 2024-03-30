@@ -281,6 +281,7 @@ header{
     background-attachment: fixed;
 }
 .banner-bg{
+    transition: 0.5s ease-in-out;
 }
 .maq-escrever{
     min-height: 300px;
@@ -328,8 +329,9 @@ header{
 
 #about{
     min-height: 500px;
-    background-color: rgba(25, 25, 25);
+    background-color: rgba(255, 255, 255);
     position: relative;
+    transition: 0.5s ease-in-out;
 }
 @keyframes aparecerEsquerda {
     from {
@@ -397,7 +399,7 @@ header{
     left: 0px;
 }
 .text-about{
-    color: #fff;
+    color: #191919;
     text-align: justify;
 }
 .img-about{
@@ -469,7 +471,8 @@ header{
     background-size: cover;
 }
 .bg-hab{
-    background-color: rgba(25, 25, 25, .7);
+    background-color: rgba(255, 255, 255, .2);
+    transition: 0.5s ease-in-out;
 }
 .content-hab{
     padding-top: 50px !important;
@@ -576,6 +579,9 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 600px;
+}
+.bg-projetos{
+    transition: 0.5s ease-in-out;
 }
 .title-projetos h2{
     text-align: center;

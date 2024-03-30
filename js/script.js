@@ -14,24 +14,43 @@ cards.forEach(card => {
 
 
 //mudar o tema para escuro ou claro
+
 let temaAtual = false;
 
 function mudarTema(){
 
   const bgHeader = document.querySelector('.topo');
   const link = document.querySelectorAll('.nav-link');
+  const bgMaquinaEscrever = document.querySelector('.banner-bg');
+  const bgProjetos = document.querySelector('.bg-projetos');
+  const txtMaqEscrever = document.querySelector('.line-1');
+  const bgAbout = document.querySelector('#about');
+  const txtAbout = document.querySelector('.text-about');
+  const bgHab = document.querySelector('.bg-hab');
 
   if(!temaAtual){
     bgHeader.style.backgroundColor = '#191919';
+    bgMaquinaEscrever.style.backgroundColor = 'rgba(25, 25, 25, .8)';
+    bgProjetos.style.backgroundColor = 'rgba(25, 25, 25, .8)';
+    txtMaqEscrever.style.color = '#fff';
+    bgAbout.style.backgroundColor = 'rgba(25, 25, 25)';
+    txtAbout.style.color = '#fff';
+    bgHab.style.backgroundColor = 'rgba(25, 25, 25, .7)'
 
     link.forEach((links) =>{
       links.style.color = '#fff';
     });
 
 
-    console.log('escuro');
   }else{
     bgHeader.style.backgroundColor = '#fff';
+    bgMaquinaEscrever.style.backgroundColor = 'transparent';
+    bgProjetos.style.backgroundColor = 'transparent';
+    txtMaqEscrever.style.color = '#000';
+    bgAbout.style.backgroundColor = 'rgba(255, 255, 255)';
+    txtAbout.style.color = '#191919';
+    bgHab.style.backgroundColor = 'rgba(255, 255, 255, .2)'
+
     link.forEach((links) => {
       links.style.color = 'var(--bs-nav-link-color)';
     });
