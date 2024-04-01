@@ -498,6 +498,7 @@ header{
     color: #DC3545;
     font-weight: normal;
     transition: filter 0.3s; /* Adiciona uma transição suave */
+    transition: 0.5s ease-in-out;
   }
 
   .meuCard:hover {
